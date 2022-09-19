@@ -14,6 +14,8 @@ namespace TpWinForm_Benitez_Noceti
 {
     public partial class Agregar : Form
     {
+        Articulo _articulo;
+
         private Articulo articulo = null;
         public Agregar()
         {
@@ -28,21 +30,34 @@ namespace TpWinForm_Benitez_Noceti
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            Articulo art = new Articulo();
+            Articulo articulo = new Articulo();
 
             ArticuloNegocio neg = new ArticuloNegocio();
             try
             {
-                art.Codigo = txtCod.Text;
-                art.Nombre = txtNomb.Text;
-                art.Precio = Convert.ToDouble(txtPrecio.Text);
-                art.Descripcion = txtDescr.Text;
-                art.Categoria = (Categoria)cboxCat.SelectedItem;
-                art.Marca = (Marca)cboxMarca.SelectedItem;
-                art.Imagen = txtImagen.Text;
-                neg.agregar(art);
+                articulo.Id = _articulo != null ? _articulo.Id : 0;
+                articulo.Codigo = txtCod.Text;
+                articulo.Nombre = txtNomb.Text;
+                articulo.Precio = Convert.ToDouble(txtPrecio.Text);
+                articulo.Descripcion = txtDescr.Text;
+                articulo.Categoria = (Categoria)cboxCat.SelectedItem;
+                articulo.Marca = (Marca)cboxMarca.SelectedItem;
+                articulo.Imagen = txtImagen.Text;
 
-                MessageBox.Show("Se ha agregado el articulo correctamente", "Agregar Articulo");
+                if (articulo.Id == 0)
+                {
+                    neg.agregar(articulo);
+                    MessageBox.Show("Se ha agregado el articulo correctamente", "Agregar Articulo");
+
+                }
+                else
+                {
+                    neg.editar(articulo);
+                    MessageBox.Show("Se ha modificado el articulo correctamente", "Modificar Articulo");
+
+                }
+
+
             }
             catch (Exception ex)
             {
@@ -52,7 +67,7 @@ namespace TpWinForm_Benitez_Noceti
             finally
             {
                 this.Close();
-                ((frmPrincipal)this.Owner).cargarArticulos();
+                //((frmPrincipal)this.Owner).cargarArticulos();
             }
             
             
@@ -117,8 +132,10 @@ namespace TpWinForm_Benitez_Noceti
 
         private void cargarArticulo(Articulo articulo)
         {
+            _articulo = articulo;
             if(articulo != null)
             {
+                clearForm();
                 txtCod.Text = articulo.Codigo;
                 txtNomb.Text = articulo.Nombre;
                 txtDescr.Text = articulo.Descripcion;
@@ -127,6 +144,16 @@ namespace TpWinForm_Benitez_Noceti
                 cboxMarca.SelectedValue = articulo.Marca.Id;
                 cboxCat.SelectedValue = articulo.Categoria.Id;
             }
+        }
+        private void clearForm()
+        {
+            txtCod.Text = string.Empty;
+            txtNomb.Text = string.Empty;
+            txtDescr.Text = string.Empty;
+            txtImagen.Text = string.Empty;
+            txtPrecio.Text = string.Empty;
+            cboxMarca.SelectedValue = articulo.Marca.Id;
+            cboxCat.SelectedValue = articulo.Categoria.Id;
         }
     }
 }

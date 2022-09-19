@@ -1,0 +1,36 @@
+C:\Users\Juan Cruz HB\Desktop\TPprogra\TpWinForm_Benitez_Noceti\TpWinForm_Benitez_Noceti\negocio\bin\Debug\negocio.dll
+C:\Users\Juan Cruz HB\Desktop\TPprogra\TpWinForm_Benitez_Noceti\TpWinForm_Benitez_Noceti\negocio\bin\Debug\negocio.pdb
+C:\Users\Juan Cruz HB\Desktop\TPprogra\TpWinForm_Benitez_Noceti\TpWinForm_Benitez_Noceti\negocio\bin\Debug\dominio.dll
+C:\Users\Juan Cruz HB\Desktop\TPprogra\TpWinForm_Benitez_Noceti\TpWinForm_Benitez_Noceti\negocio\bin\Debug\dominio.pdb
+C:\Users\Juan Cruz HB\Desktop\TPprogra\TpWinForm_Benitez_Noceti\TpWinForm_Benitez_Noceti\negocio\obj\Debug\negocio.csproj.AssemblyReference.cache
+C:\Users\Juan Cruz HB\Desktop\TPprogra\TpWinForm_Benitez_Noceti\TpWinForm_Benitez_Noceti\negocio\obj\Debug\negocio.csproj.CoreCompileInputs.cache
+C:\Users\Juan Cruz HB\Desktop\TPprogra\TpWinForm_Benitez_Noceti\TpWinForm_Benitez_Noceti\negocio\obj\Debug\negocio.csproj.CopyComplete
+C:\Users\Juan Cruz HB\Desktop\TPprogra\TpWinForm_Benitez_Noceti\TpWinForm_Benitez_Noceti\negocio\obj\Debug\negocio.dll
+C:\Users\Juan Cruz HB\Desktop\TPprogra\TpWinForm_Benitez_Noceti\TpWinForm_Benitez_Noceti\negocio\obj\Debug\negocio.pdb
+C:\Users\Juan Cruz HB\Desktop\TPprogra - copia\TpWinForm_Benitez_Noceti\TpWinForm_Benitez_Noceti\negocio\bin\Debug\negocio.dll
+C:\Users\Juan Cruz HB\Desktop\TPprogra - copia\TpWinForm_Benitez_Noceti\TpWinForm_Benitez_Noceti\negocio\bin\Debug\negocio.pdb
+C:\Users\Juan Cruz HB\Desktop\TPprogra - copia\TpWinForm_Benitez_Noceti\TpWinForm_Benitez_Noceti\negocio\bin\Debug\dominio.dll
+C:\Users\Juan Cruz HB\Desktop\TPprogra - copia\TpWinForm_Benitez_Noceti\TpWinForm_Benitez_Noceti\negocio\bin\Debug\dominio.pdb
+C:\Users\Juan Cruz HB\Desktop\TPprogra - copia\TpWinForm_Benitez_Noceti\TpWinForm_Benitez_Noceti\negocio\obj\Debug\negocio.csproj.AssemblyReference.cache
+C:\Users\Juan Cruz HB\Desktop\TPprogra - copia\TpWinForm_Benitez_Noceti\TpWinForm_Benitez_Noceti\negocio\obj\Debug\negocio.csproj.CoreCompileInputs.cache
+C:\Users\Juan Cruz HB\Desktop\TPprogra - copia\TpWinForm_Benitez_Noceti\TpWinForm_Benitez_Noceti\negocio\obj\Debug\negocio.csproj.CopyComplete
+C:\Users\Juan Cruz HB\Desktop\TPprogra - copia\TpWinForm_Benitez_Noceti\TpWinForm_Benitez_Noceti\negocio\obj\Debug\negocio.dll
+C:\Users\Juan Cruz HB\Desktop\TPprogra - copia\TpWinForm_Benitez_Noceti\TpWinForm_Benitez_Noceti\negocio\obj\Debug\negocio.pdb
+C:\Users\Juan Cruz HB\OneDrive - frgp.utn.edu.ar\Facu\Programacion III\TPprogra\TpWinForm_Benitez_Noceti\TpWinForm_Benitez_Noceti\negocio\bin\Debug\negocio.dll
+C:\Users\Juan Cruz HB\OneDrive - frgp.utn.edu.ar\Facu\Programacion III\TPprogra\TpWinForm_Benitez_Noceti\TpWinForm_Benitez_Noceti\negocio\bin\Debug\negocio.pdb
+C:\Users\Juan Cruz HB\OneDrive - frgp.utn.edu.ar\Facu\Programacion III\TPprogra\TpWinForm_Benitez_Noceti\TpWinForm_Benitez_Noceti\negocio\bin\Debug\dominio.dll
+C:\Users\Juan Cruz HB\OneDrive - frgp.utn.edu.ar\Facu\Programacion III\TPprogra\TpWinForm_Benitez_Noceti\TpWinForm_Benitez_Noceti\negocio\bin\Debug\dominio.pdb
+C:\Users\Juan Cruz HB\OneDrive - frgp.utn.edu.ar\Facu\Programacion III\TPprogra\TpWinForm_Benitez_Noceti\TpWinForm_Benitez_Noceti\negocio\obj\Debug\negocio.csproj.AssemblyReference.cache
+C:\Users\Juan Cruz HB\OneDrive - frgp.utn.edu.ar\Facu\Programacion III\TPprogra\TpWinForm_Benitez_Noceti\TpWinForm_Benitez_Noceti\negocio\obj\Debug\negocio.csproj.CoreCompileInputs.cache
+C:\Users\Juan Cruz HB\OneDrive - frgp.utn.edu.ar\Facu\Programacion III\TPprogra\TpWinForm_Benitez_Noceti\TpWinForm_Benitez_Noceti\negocio\obj\Debug\negocio.csproj.CopyComplete
+C:\Users\Juan Cruz HB\OneDrive - frgp.utn.edu.ar\Facu\Programacion III\TPprogra\TpWinForm_Benitez_Noceti\TpWinForm_Benitez_Noceti\negocio\obj\Debug\negocio.dll
+C:\Users\Juan Cruz HB\OneDrive - frgp.utn.edu.ar\Facu\Programacion III\TPprogra\TpWinForm_Benitez_Noceti\TpWinForm_Benitez_Noceti\negocio\obj\Debug\negocio.pdb
+C:\Users\Juan Cruz\OneDrive - frgp.utn.edu.ar\Facu\Programacion III\TPprogra\TpWinForm_Benitez_Noceti\TpWinForm_Benitez_Noceti\negocio\bin\Debug\negocio.dll
+C:\Users\Juan Cruz\OneDrive - frgp.utn.edu.ar\Facu\Programacion III\TPprogra\TpWinForm_Benitez_Noceti\TpWinForm_Benitez_Noceti\negocio\bin\Debug\negocio.pdb
+C:\Users\Juan Cruz\OneDrive - frgp.utn.edu.ar\Facu\Programacion III\TPprogra\TpWinForm_Benitez_Noceti\TpWinForm_Benitez_Noceti\negocio\bin\Debug\dominio.dll
+C:\Users\Juan Cruz\OneDrive - frgp.utn.edu.ar\Facu\Programacion III\TPprogra\TpWinForm_Benitez_Noceti\TpWinForm_Benitez_Noceti\negocio\bin\Debug\dominio.pdb
+C:\Users\Juan Cruz\OneDrive - frgp.utn.edu.ar\Facu\Programacion III\TPprogra\TpWinForm_Benitez_Noceti\TpWinForm_Benitez_Noceti\negocio\obj\Debug\negocio.csproj.AssemblyReference.cache
+C:\Users\Juan Cruz\OneDrive - frgp.utn.edu.ar\Facu\Programacion III\TPprogra\TpWinForm_Benitez_Noceti\TpWinForm_Benitez_Noceti\negocio\obj\Debug\negocio.csproj.CoreCompileInputs.cache
+C:\Users\Juan Cruz\OneDrive - frgp.utn.edu.ar\Facu\Programacion III\TPprogra\TpWinForm_Benitez_Noceti\TpWinForm_Benitez_Noceti\negocio\obj\Debug\negocio.csproj.CopyComplete
+C:\Users\Juan Cruz\OneDrive - frgp.utn.edu.ar\Facu\Programacion III\TPprogra\TpWinForm_Benitez_Noceti\TpWinForm_Benitez_Noceti\negocio\obj\Debug\negocio.dll
+C:\Users\Juan Cruz\OneDrive - frgp.utn.edu.ar\Facu\Programacion III\TPprogra\TpWinForm_Benitez_Noceti\TpWinForm_Benitez_Noceti\negocio\obj\Debug\negocio.pdb

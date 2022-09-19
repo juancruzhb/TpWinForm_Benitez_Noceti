@@ -54,20 +54,8 @@ namespace TpWinForm_Benitez_Noceti
         private void dgvArticulos_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             VistaPrevia vista = new VistaPrevia();
-            Articulo articulo = new Articulo();
-
-            articulo.Codigo = dgvArticulos.Rows[e.RowIndex].Cells[0].Value.ToString();
-            articulo.Nombre = dgvArticulos.Rows[e.RowIndex].Cells[1].Value.ToString();
-            articulo.Descripcion = dgvArticulos.Rows[e.RowIndex].Cells[2].Value.ToString();
-            articulo.Marca = (Marca)dgvArticulos.Rows[e.RowIndex].Cells[3].Value;
-            articulo.Categoria = (Categoria)dgvArticulos.Rows[e.RowIndex].Cells[4].Value;
-            articulo.Precio = (double)dgvArticulos.Rows[e.RowIndex].Cells[5].Value;
-            articulo.Imagen = dgvArticulos.Rows[e.RowIndex].Cells[6].Value.ToString();
-
-
-
-
-            vista.cargarArticulo(articulo);
+            Articulo seleccionado = seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+            vista.cargarArticulo(seleccionado);
         }
 
         private void dgvArticulos_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -80,6 +68,8 @@ namespace TpWinForm_Benitez_Noceti
                 seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
                 Agregar agregar = new Agregar(seleccionado);
                 agregar.ShowDialog();
+                cargarArticulos();
+                return;
             }
             if(cell.Value.ToString() == "Eliminar")
             {

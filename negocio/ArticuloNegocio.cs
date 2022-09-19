@@ -19,17 +19,13 @@ namespace negocio
 
             try
             {
-                conexion.ConnectionString = "Integrated Security = SSPI; Persist Security Info = False; Initial Catalog = CATALOGO_DB; Data Source = JUANCRUZHB\\SQLEXPRESS";
+                conexion.ConnectionString = "Integrated Security = SSPI; Persist Security Info = False; Initial Catalog = CATALOGO_DB; Data Source = .\\SQLEXPRESS";
                 conexion.Open();
                 string query = @"select a.Id, codigo,nombre,a.descripcion,c.Descripcion Cat,m.Descripcion Mar,imagenurl,Precio, c.Id IdMarca, m.Id IdCategoria 
                                     from ARTICULOS a join CATEGORIAS c on (a.IdCategoria = c.Id) 
                                     join MARCAS m on (a.IdMarca = m.id) 
                                     Where Estado like 1 ";
-                //command.CommandType = System.Data.CommandType.Text;
-                /*command.CommandText = @"select a.Id, codigo,nombre,a.descripcion,c.Descripcion Cat,m.Descripcion Mar,imagenurl,Precio, c.Id IdMarca, m.Id IdCategoria 
-                                    from ARTICULOS a join CATEGORIAS c on (a.IdCategoria = c.Id) 
-                                    join MARCAS m on (a.IdMarca = m.id) 
-                                    Where Estado = 1";*/
+
 
                 if (!string.IsNullOrEmpty(busqueda))
                 {
@@ -42,7 +38,7 @@ namespace negocio
                 command.CommandText = query;
                 command.Connection = conexion;
 
-                //conexion.Open();
+
                 reader = command.ExecuteReader();
 
                 while (reader.Read())
@@ -81,13 +77,13 @@ namespace negocio
 
         public void agregar(Articulo art)
         {
-            AccesoDatos dao = new AccesoDatos();
+            AccesoDatos datos = new AccesoDatos();
             try
             {
-                dao.query("Insert into articulos (codigo,nombre,descripcion,Precio,IdMarca,IdCategoria, ImagenUrl)VALUES('"+art.Codigo+"','"+art.Nombre+"','"+art.Descripcion+"','"+art.Precio+"',@idMarca,@idCategoria, '"+art.Imagen+"')");
-                dao.setearParametros("@idMarca", art.Marca.Id);
-                dao.setearParametros("@idCategoria", art.Categoria.Id);
-                dao.execQuery();
+                datos.query("Insert into articulos (codigo,nombre,descripcion,Precio,IdMarca,IdCategoria, ImagenUrl)VALUES('"+art.Codigo+"','"+art.Nombre+"','"+art.Descripcion+"','"+art.Precio+"',@idMarca,@idCategoria, '"+art.Imagen+"')");
+                datos.setearParametros("@idMarca", art.Marca.Id);
+                datos.setearParametros("@idCategoria", art.Categoria.Id);
+                datos.execQuery();
             }
             catch (Exception ex)
             {
@@ -112,7 +108,37 @@ namespace negocio
             }
         }
 
+        public void editar(Articulo articulo)
+        {
+            try
+            {
+                AccesoDatos datos = new AccesoDatos();
 
+                datos.query(@"UPDATE ARTICULOS
+                                SET Codigo = @Codigo, Nombre = @Nombre, Descripcion = @Descripcion,
+                                    IdMarca = @IdMarca, IdCategoria = @IdCategoria, ImagenUrl = @ImagenUrl,
+                                    Precio = @precio
+                                WHERE ID = @Id");
+
+                datos.setearParametros("@Codigo", articulo.Codigo);
+                datos.setearParametros("@Nombre", articulo.Nombre);
+                datos.setearParametros("@Descripcion", articulo.Descripcion);
+                datos.setearParametros("@IdMarca", articulo.Marca.Id);
+                datos.setearParametros("@IdCategoria", articulo.Categoria.Id);
+                datos.setearParametros("@ImagenUrl", articulo.Imagen);
+                datos.setearParametros("@Precio", articulo.Precio);
+                datos.setearParametros("@Id", articulo.Id);
+
+                datos.execQuery();
+
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
 
     }
 }

@@ -16,5 +16,7 @@ namespace dominio
         public Categoria Categoria { get; set; }
         public string Imagen { get; set; }
         public double Precio { get; set; }
+
+
     }
 }
