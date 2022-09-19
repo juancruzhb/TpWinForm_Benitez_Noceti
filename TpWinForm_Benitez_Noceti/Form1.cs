@@ -60,36 +60,42 @@ namespace TpWinForm_Benitez_Noceti
 
         private void dgvArticulos_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            DataGridViewLinkCell cell = (DataGridViewLinkCell)dgvArticulos.Rows[e.RowIndex].Cells[e.ColumnIndex];
-
-            if(cell.Value.ToString() == "Editar")
+            if(e.ColumnIndex == 6 || e.ColumnIndex == 7)
             {
-                Articulo seleccionado;
-                seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
-                Agregar agregar = new Agregar(seleccionado);
-                agregar.ShowDialog();
-                cargarArticulos();
-                return;
-            }
-            if(cell.Value.ToString() == "Eliminar")
-            {
-                string mensaje = "Desea eliminar este articulo?";
-                string caption = "Eliminacion de articulo";
 
-                MessageBoxButtons botones = MessageBoxButtons.YesNo;
-                DialogResult result;
+                DataGridViewLinkCell cell = (DataGridViewLinkCell)dgvArticulos.Rows[e.RowIndex].Cells[e.ColumnIndex];
+            
 
-                result = MessageBox.Show(mensaje, caption, botones);
-                if(result == System.Windows.Forms.DialogResult.Yes)
+                if(cell.Value.ToString() == "Editar")
                 {
-                    Articulo seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
-                    ArticuloNegocio negocio = new ArticuloNegocio();
-                    negocio.eliminar(seleccionado.Id);
-                    MessageBox.Show("Se ha eliminado el articulo seleccionado");
+                    Articulo seleccionado;
+                    seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+                    Agregar agregar = new Agregar(seleccionado);
+                    agregar.ShowDialog();
                     cargarArticulos();
+                    return;
                 }
+                if(cell.Value.ToString() == "Eliminar")
+                {
+                    string mensaje = "Desea eliminar este articulo?";
+                    string caption = "Eliminacion de articulo";
+
+                    MessageBoxButtons botones = MessageBoxButtons.YesNo;
+                    DialogResult result;
+
+                    result = MessageBox.Show(mensaje, caption, botones);
+                    if(result == System.Windows.Forms.DialogResult.Yes)
+                    {
+                        Articulo seleccionado = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+                        ArticuloNegocio negocio = new ArticuloNegocio();
+                        negocio.eliminar(seleccionado.Id);
+                        MessageBox.Show("Se ha eliminado el articulo seleccionado");
+                        cargarArticulos();
+                    }
               
+                }
             }
+            
         }
 
         private void btnSearch_Click(object sender, EventArgs e)

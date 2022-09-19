@@ -66,3 +66,20 @@ C:\Users\Juan Cruz\OneDrive - frgp.utn.edu.ar\Facu\Programacion III\TPprogra\TpW
 C:\Users\Juan Cruz\OneDrive - frgp.utn.edu.ar\Facu\Programacion III\TPprogra\TpWinForm_Benitez_Noceti\TpWinForm_Benitez_Noceti\TpWinForm_Benitez_Noceti\obj\Debug\TpWinForm_Benitez_Noceti.csproj.CopyComplete
 C:\Users\Juan Cruz\OneDrive - frgp.utn.edu.ar\Facu\Programacion III\TPprogra\TpWinForm_Benitez_Noceti\TpWinForm_Benitez_Noceti\TpWinForm_Benitez_Noceti\obj\Debug\TpWinForm_Benitez_Noceti.exe
 C:\Users\Juan Cruz\OneDrive - frgp.utn.edu.ar\Facu\Programacion III\TPprogra\TpWinForm_Benitez_Noceti\TpWinForm_Benitez_Noceti\TpWinForm_Benitez_Noceti\obj\Debug\TpWinForm_Benitez_Noceti.pdb
+C:\Users\Juan Cruz\Desktop\TPFINAL\TpWinForm_Benitez_Noceti\TpWinForm_Benitez_Noceti\bin\Debug\TpWinForm_Benitez_Noceti.exe.config
+C:\Users\Juan Cruz\Desktop\TPFINAL\TpWinForm_Benitez_Noceti\TpWinForm_Benitez_Noceti\bin\Debug\TpWinForm_Benitez_Noceti.exe
+C:\Users\Juan Cruz\Desktop\TPFINAL\TpWinForm_Benitez_Noceti\TpWinForm_Benitez_Noceti\bin\Debug\TpWinForm_Benitez_Noceti.pdb
+C:\Users\Juan Cruz\Desktop\TPFINAL\TpWinForm_Benitez_Noceti\TpWinForm_Benitez_Noceti\bin\Debug\dominio.dll
+C:\Users\Juan Cruz\Desktop\TPFINAL\TpWinForm_Benitez_Noceti\TpWinForm_Benitez_Noceti\bin\Debug\negocio.dll
+C:\Users\Juan Cruz\Desktop\TPFINAL\TpWinForm_Benitez_Noceti\TpWinForm_Benitez_Noceti\bin\Debug\dominio.pdb
+C:\Users\Juan Cruz\Desktop\TPFINAL\TpWinForm_Benitez_Noceti\TpWinForm_Benitez_Noceti\bin\Debug\negocio.pdb
+C:\Users\Juan Cruz\Desktop\TPFINAL\TpWinForm_Benitez_Noceti\TpWinForm_Benitez_Noceti\obj\Debug\TpWinForm_Benitez_Noceti.csproj.AssemblyReference.cache
+C:\Users\Juan Cruz\Desktop\TPFINAL\TpWinForm_Benitez_Noceti\TpWinForm_Benitez_Noceti\obj\Debug\TpWinForm_Benitez_Noceti.Agregar.resources
+C:\Users\Juan Cruz\Desktop\TPFINAL\TpWinForm_Benitez_Noceti\TpWinForm_Benitez_Noceti\obj\Debug\TpWinForm_Benitez_Noceti.frmPrincipal.resources
+C:\Users\Juan Cruz\Desktop\TPFINAL\TpWinForm_Benitez_Noceti\TpWinForm_Benitez_Noceti\obj\Debug\TpWinForm_Benitez_Noceti.Properties.Resources.resources
+C:\Users\Juan Cruz\Desktop\TPFINAL\TpWinForm_Benitez_Noceti\TpWinForm_Benitez_Noceti\obj\Debug\TpWinForm_Benitez_Noceti.VistaPrevia.resources
+C:\Users\Juan Cruz\Desktop\TPFINAL\TpWinForm_Benitez_Noceti\TpWinForm_Benitez_Noceti\obj\Debug\TpWinForm_Benitez_Noceti.csproj.GenerateResource.cache
+C:\Users\Juan Cruz\Desktop\TPFINAL\TpWinForm_Benitez_Noceti\TpWinForm_Benitez_Noceti\obj\Debug\TpWinForm_Benitez_Noceti.csproj.CoreCompileInputs.cache
+C:\Users\Juan Cruz\Desktop\TPFINAL\TpWinForm_Benitez_Noceti\TpWinForm_Benitez_Noceti\obj\Debug\TpWinForm_Benitez_Noceti.csproj.CopyComplete
+C:\Users\Juan Cruz\Desktop\TPFINAL\TpWinForm_Benitez_Noceti\TpWinForm_Benitez_Noceti\obj\Debug\TpWinForm_Benitez_Noceti.exe
+C:\Users\Juan Cruz\Desktop\TPFINAL\TpWinForm_Benitez_Noceti\TpWinForm_Benitez_Noceti\obj\Debug\TpWinForm_Benitez_Noceti.pdb
