@@ -36,6 +36,7 @@ namespace TpWinForm_Benitez_Noceti
             try
             {
                 articulo.Id = _articulo != null ? _articulo.Id : 0;
+
                 articulo.Codigo = txtCod.Text;
                 articulo.Nombre = txtNomb.Text;
                 articulo.Precio = Convert.ToDouble(txtPrecio.Text);

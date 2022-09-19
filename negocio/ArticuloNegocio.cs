@@ -21,7 +21,7 @@ namespace negocio
             {
                 conexion.ConnectionString = "Integrated Security = SSPI; Persist Security Info = False; Initial Catalog = CATALOGO_DB; Data Source = .\\SQLEXPRESS";
                 conexion.Open();
-                string query = @"select a.Id, codigo,nombre,a.descripcion,c.Descripcion Cat,m.Descripcion Mar,imagenurl,Precio, c.Id IdMarca, m.Id IdCategoria 
+                string query = @"select a.Id, codigo,nombre,a.descripcion,c.Descripcion Cat,m.Descripcion Mar,imagenurl,Precio, m.Id IdMarca, c.Id IdCategoria 
                                     from ARTICULOS a join CATEGORIAS c on (a.IdCategoria = c.Id) 
                                     join MARCAS m on (a.IdMarca = m.id) 
                                     Where Estado like 1 ";

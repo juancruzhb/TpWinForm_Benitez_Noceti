@@ -35,6 +35,12 @@
             this.modificarElementoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eliminarElementoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dgvArticulos = new System.Windows.Forms.DataGridView();
+            this.articuloBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.lblSearch = new System.Windows.Forms.Label();
+            this.txtSearch = new System.Windows.Forms.TextBox();
+            this.btnSearch = new System.Windows.Forms.Button();
+            this.btnNuevo = new System.Windows.Forms.Button();
+            this.articuloBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.codigoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -43,12 +49,6 @@
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Editar = new System.Windows.Forms.DataGridViewLinkColumn();
             this.Eliminar = new System.Windows.Forms.DataGridViewLinkColumn();
-            this.articuloBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.lblSearch = new System.Windows.Forms.Label();
-            this.txtSearch = new System.Windows.Forms.TextBox();
-            this.btnSearch = new System.Windows.Forms.Button();
-            this.btnNuevo = new System.Windows.Forms.Button();
-            this.articuloBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvArticulos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.articuloBindingSource)).BeginInit();
@@ -110,60 +110,11 @@
             this.dgvArticulos.DataSource = this.articuloBindingSource;
             this.dgvArticulos.Location = new System.Drawing.Point(32, 131);
             this.dgvArticulos.Name = "dgvArticulos";
+            this.dgvArticulos.ReadOnly = true;
             this.dgvArticulos.Size = new System.Drawing.Size(842, 274);
             this.dgvArticulos.TabIndex = 1;
             this.dgvArticulos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvArticulos_CellContentClick);
             this.dgvArticulos.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvArticulos_CellDoubleClick);
-            // 
-            // codigoDataGridViewTextBoxColumn
-            // 
-            this.codigoDataGridViewTextBoxColumn.DataPropertyName = "Codigo";
-            this.codigoDataGridViewTextBoxColumn.HeaderText = "Codigo";
-            this.codigoDataGridViewTextBoxColumn.Name = "codigoDataGridViewTextBoxColumn";
-            // 
-            // nombreDataGridViewTextBoxColumn
-            // 
-            this.nombreDataGridViewTextBoxColumn.DataPropertyName = "Nombre";
-            this.nombreDataGridViewTextBoxColumn.HeaderText = "Nombre";
-            this.nombreDataGridViewTextBoxColumn.Name = "nombreDataGridViewTextBoxColumn";
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "Descripcion";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Descripcion";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Marca";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Marca";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Categoria";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Categoria";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "Precio";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Precio";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // Editar
-            // 
-            this.Editar.HeaderText = "Editar";
-            this.Editar.Name = "Editar";
-            this.Editar.Text = "Editar";
-            this.Editar.UseColumnTextForLinkValue = true;
-            // 
-            // Eliminar
-            // 
-            this.Eliminar.HeaderText = "Eliminar";
-            this.Eliminar.Name = "Eliminar";
-            this.Eliminar.Text = "Eliminar";
-            this.Eliminar.UseColumnTextForLinkValue = true;
             // 
             // articuloBindingSource
             // 
@@ -212,6 +163,64 @@
             // articuloBindingSource1
             // 
             this.articuloBindingSource1.DataSource = typeof(dominio.Articulo);
+            // 
+            // codigoDataGridViewTextBoxColumn
+            // 
+            this.codigoDataGridViewTextBoxColumn.DataPropertyName = "Codigo";
+            this.codigoDataGridViewTextBoxColumn.HeaderText = "Codigo";
+            this.codigoDataGridViewTextBoxColumn.Name = "codigoDataGridViewTextBoxColumn";
+            this.codigoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // nombreDataGridViewTextBoxColumn
+            // 
+            this.nombreDataGridViewTextBoxColumn.DataPropertyName = "Nombre";
+            this.nombreDataGridViewTextBoxColumn.HeaderText = "Nombre";
+            this.nombreDataGridViewTextBoxColumn.Name = "nombreDataGridViewTextBoxColumn";
+            this.nombreDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Descripcion";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Descripcion";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Marca";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Marca";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Categoria";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Categoria";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "Precio";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Precio";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            // 
+            // Editar
+            // 
+            this.Editar.HeaderText = "Editar";
+            this.Editar.Name = "Editar";
+            this.Editar.ReadOnly = true;
+            this.Editar.Text = "Editar";
+            this.Editar.UseColumnTextForLinkValue = true;
+            // 
+            // Eliminar
+            // 
+            this.Eliminar.HeaderText = "Eliminar";
+            this.Eliminar.Name = "Eliminar";
+            this.Eliminar.ReadOnly = true;
+            this.Eliminar.Text = "Eliminar";
+            this.Eliminar.UseColumnTextForLinkValue = true;
             // 
             // frmPrincipal
             // 
